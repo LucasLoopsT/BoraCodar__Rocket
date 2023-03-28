@@ -17,20 +17,20 @@
         <section>
             <img src="imgs/logo.png" class="Logomarca">
             <h1>Acesse a plataforma</h1>
-            <p>Faça login ou registre-se para começar a construir<br>seus projetos ainda hoje.</p>
+            <p id="Text1">Faça login ou registre-se para começar a construir<br>seus projetos ainda hoje.</p>
         </section>
 
         <form>
-            <section>
-                <h3 class="Mail">E-mail</h3>
-                <input type="email" class="Mail__input" placeholder="Digite sua e-mail">
+            <section class="Container__Flex">
+                <label for="Mail" class="Mail">E-mail</label>
+                <input type="email" id="Mail" class="Mail__input" placeholder="Digite sua e-mail">
             </section>
         
             <section class="Container__Flex">
-                <h3 class="Pin">Senha</h3>
+                <label for="Pass"class="Pin">Senha</label>
                 <a href="#" class="Forgot">Esqueceu a senha?</a>
-                <input type="password" class="Pin__input" placeholder="Digite sua senha">
-                <i class="fa-sharp fa-regular fa-eye-slash" id="Icon1"></i>
+                <input type="password" id="Pass" class="Pin__input" placeholder="Digite sua senha">
+                <div class="eye" onclick="MyFunction()"><i class="fa-solid fa-eye"></i></div>
             </section>
 
             <section>
@@ -47,5 +47,23 @@
     
     <aside>
     </aside>
+
+    <script>
+        function MyFunction(){
+
+            document.getElementById("#Pass");
+                if (Pass.type === "password"){
+                    Pass.type = "text";
+                    document.querySelector(".eye").style.color="#7C3AED";
+           } else {
+                Pass.type ="password";
+                document.querySelector(".eye").style.color="#94A3B8";
+
+           }
+        }       
+        
+    </script>
+
 </body>
 </html>
+
