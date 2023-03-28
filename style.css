@@ -3,146 +3,168 @@
     box-sizing: border-box;
     font-family: 'Titillium Web', sans-serif;
 }
+
+:root{
+    font-size: 62.5%;
+}
+
 body{
     display: grid;
     grid-template-areas: 
-    "Main Aside";
+    "Main Aside Aside";
+    font-size: 1.6rem;
+    background-color: #F8FAFC;
+
 }
 
 main{
     grid-area: "Main";
-    height: 900px;
-    width: 704px;
-    background-color: #F8FAFC;
+    grid-column: 1/2;
+
+    height: 90rem;
 }
 
 aside{
     grid-area: "Aside";
+    grid-column: 2/3;
     background-image: url(imgs/fundo__aside.png);
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
-    height: 900px;
-    width: 736px;
-    left: 704px;
-    top: 0px;
+    width: 200%;
 }
+
 Section{
-    margin-left: 112px;
+    margin-left: 11.2rem;
 }
 
 /* top */
 .Logomarca{
-    width: 159.5px;
-    margin-top: 40px;
+    width: 15.9rem;
+    margin-top: 4rem;
 }
 h1{
     font-weight:bold;
-    font-size: 36px;
+    font-size: 3.6rem;
     color: #1E293B;
-    margin-top: 114px;
+    margin-top: 11.4rem;
+    width: 38.4rem;
 }
 p{
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 40.rem;
+    font-size: 1.6rem;
     color: #475569;
-    margin-top: 16px;
+    margin-top: 1.6rem;
+}
+
+#Text1{
+    width: 38.4rem;
 }
 
 /* Email */
 .Mail{
-    margin-top: 40px;
+    margin-top: 4rem;
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #1E293B;
 }
 .Mail__input{
-    margin-top: 8px;
-    width: 384px;
-    height: 53px;
+    margin-top: .8rem;
+    width: 38.4rem;
+    height: 5.3rem;
     border: 1px solid #E2E8F0;
     border-radius: 4px;
     background-color: #ffffff;
-    padding-left: 12px;
+    padding-left: 1.2rem;
 }
 
 /* Senha */
 .Container__Flex{
     display: flex;
-    width: 384px;
+    width: 38.4rem;
     flex-wrap: wrap;
 }
 
 .Pin{
-    margin-top: 16px;
+    margin-top: 1.6rem;
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #1E293B;
 }
 .Forgot{
-    margin-top: 16px;
+    margin-top: 1.6rem;
     color:#7C3AED;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1.4rem;
     text-decoration: none;
-    width: 346px;
+    width: 34.6rem;
     text-align: end;
 }
 .Pin__input{
-    margin-top: 8px;
-    width: 384px;
-    height: 53px;
+    margin-top: .8rem;
+    width: 38.4rem;
+    height: 5.3rem;
     border: 1px solid #E2E8F0;
     border-radius: 4px;
     background-color: #ffffff;
-    padding-left: 12px;
+    padding-left: 1.2rem;
 
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
-#Icon1 {
+.eye {
     color: #94A3B8;
-    width: 18.33px;
-    height: 18.33px;
+    width: 1.8rem;
+    height: 1.8rem;
     position: absolute;
-    margin-top: 63px;
-    margin-left: 348px;
+    margin-top: 5.8rem;
+    margin-left: 34.8rem;   
+    
+    transition: all 0.1s ease;
+}
+
+.eye:hover{
+    font-size: 1.9rem;
+    
 }
 
 .Submit{
-    margin-top: 32px;
+    margin-top: 3.2rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 16px 24px;
-    gap: 10px;
+    gap: 1rem;
 
-    width: 384px;
-    height: 56px;
+    width: 38.4rem;
+    height: 5.6rem;
     background: #7C3AED;
     border-radius: 4px;
     border: none;
 
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #ffffff;
+    
+    transition: all 0.2s ease;
 }
 
 
 .Register{
-    margin-top: 16px;
-    margin-left: 3px;
+    margin-top: 1.6rem;
+    margin-left: .3rem;
     color: #7C3AED;
     font-weight: bold;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.6rem;
     align-items: center;
 }
 
-
+.Submit:hover{
+    background-color: #9964f5;
+}
 
 
