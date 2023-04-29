@@ -1,4 +1,4 @@
-<h1 align="center">Desafio - Replicar template</h1>
+<h1 align="center">Recriação de uma tela de login</h1>
 
 <p align="center"> <img src="imgs/preview.png" width="100%"> </p>
 
